@@ -1,0 +1,41 @@
+<configs>
+	<!-- run buff -->
+
+	<append xpath="/blocks/block[@name='terrAsphalt']">
+		<property name="BuffsWhenWalkedOn" value="meeptrigger"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='terrGravel']">
+		<property name="BuffsWhenWalkedOn" value="meeptrigger"/>
+	</append>
+
+	<!-- rest buff -->
+	
+	<append xpath="blocks/block[@name='bedroll']">
+		<property name="BuffsWhenWalkedOn" value="resttrigger1"/> <!-- I'll change rest values on beds later -->
+	</append>
+
+	<append xpath="blocks/block[@name='mattressFlatThin']">
+		<property name="BuffsWhenWalkedOn" value="resttrigger1"/>
+	</append>
+
+	<append xpath="blocks/block[@name='mattressCurled']">
+		<property name="BuffsWhenWalkedOn" value="norest1"/>
+	</append>
+
+
+	<append xpath="blocks/block[@name='bunkBedMade']">
+		<property name="BuffsWhenWalkedOn" value="resttrigger1"/>
+	</append>
+	
+	<append xpath="blocks/block[@name='bed02']">
+		<property name="BuffsWhenWalkedOn" value="resttrigger1"/>
+	</append>
+	
+	<append xpath="blocks/block[@name='hospitalBed']">
+		<property name="BuffsWhenWalkedOn" value="resttrigger1"/>
+	</append>
+	
+	
+	
+</configs>

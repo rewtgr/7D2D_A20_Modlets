@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<configs>
+
+<append xpath="buffs">
+	
+	<buff name="resttrigger1" hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<update_rate value=".1"/>
+		<effect_group>
+			<requirements>
+				<requirement name="NotHasBuff" buff="rest1"/>
+				<requirement name="NotHasBuff" buff="norest1"/>
+				<requirement name="EntityTagCompare" tags="player"/>
+			</requirements>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="self" buff="rest1"/>
+		</effect_group>
+	</buff>
+
+	<buff name="rest1"  name_key="Resting" description_key="Resting. Regenerates health and max health slowly." icon="rest">
+		<stack_type value="ignore"/>
+		<duration value="0"/>
+		<update_rate value=".1"/>
+		<effect_group>
+			<requirements>
+				<requirement name="NotHasBuff" buff="resttrigger1"/>
+			</requirements>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="rest1"/>
+		</effect_group>
+		<effect_group>
+			<passive_effect name="HealthChangeOT" operation="base_add" value="0.005"/>
+		</effect_group>
+	</buff>
+		
+	<buff name="meeptrigger" hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<update_rate value=".1"/>
+		<effect_group>
+			<requirements>
+				<requirement name="NotHasBuff" buff="Meep"/>
+				<requirement name="NotHasBuff" buff="Pegasus"/>
+				<requirement name="EntityTagCompare" tags="player"/>
+			</requirements>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="self" buff="Meep"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="Meep" name_key="Meep meep!" description_key="You are moving faster on asphalt and gravel." icon="run-icon">
+		<stack_type value="ignore"/>
+		<duration value="0"/>
+		<update_rate value=".1"/>
+		<effect_group>
+			<requirements>
+				<requirement name="NotHasBuff" buff="meeptrigger"/>
+			</requirements>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="Meep"/>
+		</effect_group>
+		
+		<effect_group>
+			<passive_effect name="WalkSpeed" operation="base_add" value="0.30"/>
+			<passive_effect name="RunSpeed" operation="base_add" value="0.20"/>
+		</effect_group>
+	</buff>	
+		
+	</append>
+</configs>
