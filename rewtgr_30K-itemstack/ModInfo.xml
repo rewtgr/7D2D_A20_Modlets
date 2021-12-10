@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="30K-itemstack" />
+		<Description value="30000 Items Stack Size besides ammo" />
+		<Author value="rewtgr" />
+		<Version value="20.218" />
+		<Website value="http://7daystodie.com" />
+	</ModInfo>
+</xml>
