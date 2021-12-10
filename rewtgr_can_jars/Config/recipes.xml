@@ -1,0 +1,33 @@
+<configs>
+
+<!-- murky water jars-->
+
+	<append xpath="/recipes">
+		<recipe name="drinkJarRiverWater" count="1" craft_time="2">
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+			<ingredient name="resourceClayLump" count="1"/>
+		</recipe>
+	</append>
+	
+	<append xpath="/recipes">
+		<recipe name="drinkJarRiverWater" count="1" craft_time="2">
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+			<ingredient name="resourceCrushedSand" count="1"/>
+		</recipe>
+	</append>
+
+<!-- empty jars -->
+	
+	<append xpath="/recipes">
+		<recipe name="drinkJarEmpty" count="1" craft_time="1">
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+		</recipe>
+	</append>
+	
+	<append xpath="/recipes">
+		<recipe name="drinkJarEmpty" count="1" craft_time="1">
+			<ingredient name="drinkJarRiverWater" count="1"/>
+		</recipe>
+	</append>
+	
+</configs>

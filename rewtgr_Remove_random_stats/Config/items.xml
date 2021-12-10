@@ -1,0 +1,17 @@
+<configs>
+
+<!-- only perks random degredation from perks left in random stats and are 
+																			"perkMiner69r", "perkGunslinger","perkBoomstick", "perkDeadEye"
+																			"perkMachineGunner", "perkDemolitionsExpert", "perkArchery"
+																			"perkTurrets" -->
+	<remove xpath="/items/item/effect_group/passive_effect[(@name='EntityDamage') and (@value='-.15,.15')]" /> <!-- all removed -->
+	<remove xpath="/items/item/effect_group/passive_effect[(@name='BlockDamage') and (@value='-.15,.15')]" /> <!-- all removed -->
+	<remove xpath="/items/item/effect_group/passive_effect[(@name='StaminaLoss') and (@value='-.05,.05')]" /> <!-- all removed -->
+	<remove xpath="/items/item/effect_group/passive_effect[(@name='RoundsPerMinute') and (@value='-.05,.05')]" /> <!-- all removed -->
+	<remove xpath="/items/item/effect_group/passive_effect[(@name='RoundsPerMinute') and (@value='-.1,.1')]" /> <!-- all removed -->
+	<remove xpath="/items/item/effect_group/passive_effect[(@name='AttacksPerMinute') and (@value='-.05,.05')]" /> <!-- all removed -->
+	<remove xpath="/items/item/effect_group/passive_effect[(@name='WeaponHandling') and (@value='-.08,.08')]" /> <!-- all removed -->
+	<remove xpath="/items/item/effect_group/passive_effect[(@name='MagazineSize') and (@value='-.122,.122')]" /> <!-- all removed --> 
+	<remove xpath="/items/item/effect_group/passive_effect[(@name='DamageFalloffRange') and (@value='-.2,.2')]" /> <!-- all removed --> 
+
+</configs>

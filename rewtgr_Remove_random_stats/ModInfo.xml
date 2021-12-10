@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Random stats removal" />
+		<Description value="Remove random stats for items" />
+		<Author value="rewtgr" />
+		<Version value="20.218" />
+		<Website value="http://7daystodie.com" />
+	</ModInfo>
+</xml>
