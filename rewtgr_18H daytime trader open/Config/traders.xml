@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configs>
+
+<set xpath="/traders/trader_info/@open_time">04:05</set>
+
+</configs>
